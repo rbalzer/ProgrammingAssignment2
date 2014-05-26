@@ -15,7 +15,7 @@ makeCacheMatrix <- function( x = matrix() ) {
     # set cache to NULL
     i <- NULL
 	
-    #
+    # set matrix passed in to parent environment and clear parent cache
     set <- function(y) {
         x <<- y
 	i <<- NULL
